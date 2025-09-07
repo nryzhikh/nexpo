@@ -1,0 +1,12 @@
+{
+  "name": "@nexpo/web",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "next": "*",
+    "react": "*",
+    "react-dom": "*",
+    "@nexpo/utils-storage": "workspace:*",
+    "@nexpo/ui-tokens": "workspace:*"
+  }
+}

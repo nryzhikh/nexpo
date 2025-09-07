@@ -2,5 +2,34 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/web-e2e"
+    },
+    {
+      "path": "./apps/web"
+    },
+    {
+      "path": "./apps/mobile"
+    },
+    {
+      "path": "./libs/ui-tokens"
+    },
+    {
+      "path": "./libs/ui-primitives"
+    },
+    {
+      "path": "./libs/utils-storage"
+    },
+    {
+      "path": "./libs/ui-theme"
+    }
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node10",
+      "customConditions": null
+    }
+  }
 }

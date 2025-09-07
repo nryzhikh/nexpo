@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+      {
+        "name": "Web: Next dev (inspect + logs)",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "NODE_OPTIONS=--inspect pnpx nx run web:dev"
+      },
+      {
+        "name": "Attach to Node (9229)",
+        "type": "node",
+        "request": "attach",
+        "port": 9229,
+        "restart": true,
+        "autoAttachChildProcesses": true,
+        "skipFiles": ["<node_internals>/**"]
+      },
+      {
+        "name": "Mobile: Expo start (logs)",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "EXPO_DEBUG=1 pnpx nx run mobile:start"
+      }
+    ]
+  }
+  

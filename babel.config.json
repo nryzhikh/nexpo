@@ -1,0 +1,5 @@
+{
+  "presets": ["babel-preset-expo"],
+  "plugins": ["nativewind/babel"],
+  "babelrcRoots": ["*"]
+}
