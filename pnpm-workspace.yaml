@@ -1,5 +1,9 @@
 packages:
-  - "packages/*"
-
+  - 'apps/*'
+  - 'packages/*'
+  - 'libs/*'
 autoInstallPeers: true
+onlyBuiltDependencies:
+  - 'cypress'
+  - 'sharp'
 strictPeerDependencies: false
